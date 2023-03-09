@@ -1,0 +1,194 @@
+.mh-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #1f242d;
+} 
+.mh-skills .mh-professional-skill{
+    padding-right: 60px;
+    color: white;
+}
+.mh-skills .mh-professional-skill h3{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.mh-professional-skills{
+    padding-left: 20%;
+    color: white;
+}
+.mh-skills .mh-professional-skills h3{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+}
+.mh-professional-progress li{
+    display: inline-block;
+    margin: 0 auto;
+    float: none;
+    width: 48%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.mh-progress{
+    margin-bottom: 10px;
+    font: 900 1.14285/1 Cinzerl, cursive;
+    color: white;
+}
+.mh-progress .progressbar-text{
+    color: inherit !important;
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+}
+.progress.progress-line{
+    height: 10px;
+    margin-right: 60px;
+}
+.progress.progress-line .progress-text{
+    position: relative;
+    top: 50%;
+    left: 100%;
+    width: 60px;
+    transform: translateY(-35%);
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+.mh-progress.mh-progress-circle{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+
+}
+.mh-progress path:nth-child(1){
+    stroke: rgba(0,0,0,0.7);
+}
+.mh-progress path:nth-child(2){
+    stroke: #0bceaf !important;
+}
+
+.candidatos{
+    position: relative;
+    margin-bottom: 15px;
+    font-family: 'Poppins',sans-serif;
+}
+.candidatos .parcial{
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+
+}
+.candidatos .parcial .info{
+ position: relative;
+ font-family: 'Poppins',sans-serif;
+    
+}
+.candidatos .parcial .info .nome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.9;
+    font-family: 'Poppins',sans-serif;
+}
+ .candidatos .parcial .info .percentage-num{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: normal;
+} 
+.percentage-num {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+.progressBar {
+    position: relative;
+    width: 100%;
+    height: 7px;
+    margin: 30px 0 2px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.5);
+}
+.percentagem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #0bceaf;
+    transition: 3s all;
+    animation-name: animationProgress;
+    font-family: 'Poppins',sans-serif;
+}
+ .candidatos .parcial .progressBar{
+    position: relative;
+    width: 100%;
+    height: 7px;
+    margin: 30px 0 2px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.5);
+}
+.candidatos .parcial .percentagem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #0bceaf;
+    transition: 3s all;
+    animation-name: animationProgress;
+    font-family: 'Poppins',sans-serif;
+} 
+ /* .precentual{
+    animation-name: animationProgress;
+}  */
+@keyframes animationProgress{
+    from{
+        width: 0;
+
+    }
+} 
+.nome{
+    font-size: 15px;
+}
+.pr-skill-name
+{
+    font-size: 15px;
+}
+.mh-professional-skills {
+    /* padding-left: 20%; */
+    color: white;
+    padding-left: 0%;
+}
+
+@media only screen and (max-width: 600px){
+    .mh-professional-skills {
+        padding-left: 0%;
+    }
+    
+    .mh-skills .mh-professional-skill {
+        padding-left: 50px;
+        align-items: center;
+    }
+    }
