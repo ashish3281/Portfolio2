@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Certificates</title>
+    <link rel="stylesheet" href="slide.css">
+  </head>
+  <body>
+    <section>
+    <div id="certificate">
+     <div class="container">
+     <h1 class="certificate">Certifications</h1>
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+        <input type="radio" name="radio-btn" id="radio6">
+        <input type="radio" name="radio-btn" id="radio7">
+        <input type="radio" name="radio-btn" id="radio8">
+        <div class="slide first">
+          <img src="F:\portfolio2\slider\imag\IMG_20210618_125900.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="F:\portfolio2\slider\imag\IMG_20220413_184039.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="F:\portfolio2\slider\imag\IMG_20230107_200319.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="F:\portfolio2\slider\imag\Screenshot_2022_0131_132709.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="F:\portfolio2\slider\imag\Screenshot_2022_0626_140216.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="F:\portfolio2\slider\imag\Screenshot_2023_0209_155206.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="F:\portfolio2\slider\imag\Screenshot_20210620_143834.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="F:\portfolio2\slider\imag\Screenshot_2023_0123_130625.jpg" alt="">
+          </div>
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+          <div class="auto-btn6"></div>
+          <div class="auto-btn7"></div>
+          <div class="auto-btn8"></div>
+        </div>
+        
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+        <label for="radio6" class="manual-btn"></label>
+        <label for="radio7" class="manual-btn"></label>
+        <label for="radio8" class="manual-btn"></label>
+      </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 8){
+        counter = 1;
+      }
+    }, 3000);
+    </script>
+
+  </body>
+</html>
