@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+<link rel="stylesheet" href="F:\portfolio2\CSS file\style.css">
+
+<link rel="stylesheet" href="F:\portfolio2\CSS file\skill.css">
+<link rel="stylesheet" href="F:\portfolio2\CSS file\caed1.css">
+<link rel="stylesheet" href="F:\portfolio2\CSS file\cert.css">
+
+<script src="https://kit.fontawesome.com/7b16804764.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .preloader{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    
+        width: 100vw;
+        height: 100vh;
+        background-color:#1f242d;
+    
+        transition: all 0.5s ease-out;
+    }
+    .preloader .preload-text {
+        color: #0ef;
+        font-size: 28px;
+        padding: 20px;
+        font-weight: 300;
+    }
+    .preloader .blocks {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        animation: rotate 5s ease-in-out infinite;
+    }
+    
+    
+    .preloader .blocks .block {
+        position: absolute;
+        width: 30px;
+        height: 30p;
+        height: 30px;
+        border-radius: 4px;
+        background-color: #0ef;
+        transition: all 0.25s linear;
+    }
+    .preloader .blocks .block:nth-child(1){
+        top: 0px;
+        left: 40px;
+    }
+    .preloader .blocks .block:nth-child(2){
+        top: 0px;
+        left: 0px;
+    }
+    .preloader .blocks .block:nth-child(3){
+        top: 40px;
+        left: 0px;
+    }
+    @keyframes rotate{
+        0% { transform: rotate(0deg) }
+        100% { transform: rotate(360deg) }
+    }
+    div#ashish {
+        display: none;
+    }
+      
+</style>
+<body>
+
+    <div class="preloader" id="preloader">
+        <div class="blocks">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>       
+        </div>
+        <p class="preload-text">...FOLIO</p>
+    </div> 
+<div class="ashish" id="ashish">    
+    <!-- ---------------------------------------------------------------- -->
+    <header class="header">
+    
+        <a href="#" class="logo">folio<b>.</b></a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#mh-skills">Skills</a>
+            <a href="#work">Work</a>
+            <a href="#cert">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+ 
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Ashish Goyal</h1>
+            <h3>I'm a <span class="multiText"></span> </h3>
+            <p>I am a computer science student currently pursuing a Bachelor of Technology degree in Computer Science at MDU University at Rohtak. I have always had a fascination with technology and the way it can be used to solve complex problems, which led me to choose computer science as my field of study.</p>
+            <div class="social-media">
+            <a href="https://www.linkedin.com/in/ashish-goyal-819061225" ><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@algostories" ><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/ashish3281" ><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://twitter.com/AshishG84629445?t=qSSa329JzuHShdFal765LA&s=08" ><i class="fa-brands fa-square-twitter"></i></a>
+   
+            <!-- <a href=" https://www.instagram.com/invites/contact/?i=vrpm2gan80qj&utm_content=2m8fmnr" ><i class="fa-brands fa-instagram"></i></a> -->
+            
+            </div>
+            <a href="#" class="btn1">Hire Me</a>
+        </div>
+        <div class="home-img">
+            <img src="F:\portfolio2\images\header-img.svg" alt="image is here">
+        </div>
+    </section>
+ <!-- ---------------------------------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/31171.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am focused on Web Development and Data Structure Algorithm. Creative thinging along with Team building, making connections & observation, Asking questions, are my Social skills.I enjoy learning new things and working toward.
+                        I have also taken courses in software engineering and web development, which have deepened my understanding of how technology can be used to create innovative software and applications.In addition to my academic pursuits, I am an active member of the university's coding club, where I participate in coding projects and hackathons.In my free time, I enjoy reading about new technologies and experimenting with new things.
+                                            </p>
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')" >currently work</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('award')">Awards</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    
+                    
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Project</span><br> I am  currently working on a research project that explores the use of machine learning in healthcare.</li>    
+                        <li><span>Data Structure</span><br>Learning all the concepts of DSA like Array,String,Recursion,Stack and many more.</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Fresher/Student</span><br></li>
+                     
+                        
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="award">
+                    <ul>
+                         <li><span>National Talent Hunt</span><br>Won a certificate and medal
+                            at NATIONAL TALENT HUNT EXAM in Mathametics .</li>
+                        <li><span>CSS Skill Test</span><br>I successfully cleared the assessment for the skill CSS from HackerRank</li>
+                        <li><span>Hacktober</span><br>I successfully contribution to open source and Won the Goodies and stickers.I celeared all the levels successfully</li> 
+                     <li><span>Academic</span><br>Secured Rank 2  in the  semester exams
+                        GPA: 9.1/10</li>
+                        
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017</span><br>In Secondary Examination i got 86.4%</li>
+                        <li><span>2019</span><br>In Senior Secondary Examination i got 74.6%</li>
+                        <!-- <li><span>01 September 2022</span><br>I successfully completed the Microsoft Office Course[Ms Excel,Ms Word,Ms PowerPoint] </li>
+                        <li><span>Oct. 23 ,2021</span><br>I successfully completed the Python programming Tutorial For The Absolute beginner Course from udemy.</li>
+                        <li><span>1Sep 2022</span><br>I successfully completed the Java Programming: Complete Beginner To Advanced Cource from udemy.</li> -->
+                        <li><span> Btech 2021-2024</span><br><li>semester First i got 8.93 SGPA</li>
+                                                           <li>Semester Second i got 9.5 SGPA</li>
+                                                           <li>Semester Third i got 9.0 SGPA</li>
+                                                           <li>Semester Fourth i got 9.18 SGPA</li>
+                    </li>
+                        
+                    </ul>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+ <!-- ------------------------------------------------------------------ -->
+ <h2 class="sub-title service " id="skill">My Skills</h2>
+ <section class="mh-skills" id="mh-skills">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="mh-skills-inner">
+                    <div class="mh-professional-skill">
+                        <h3> Technical Skills</h3>
+                        <div class="each-skills">
+                            <div class="candidatos">
+                                <div class="parcial">
+                                    <div class="info">
+                                        <div class="nome">C</div>
+                                        <div class="percentage-num">86%</div>
+
+                                    </div>
+                                    <div class="progressBar">
+                                        <div class="percentagem" style="width:86%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="candidatos">
+                                <div class="pracial">
+                                    <div class="info">
+                                        <div class="nome">C++</div>
+                                        <div class="percentage-num">70%</div>
+
+                                    </div>
+                                    <div class="progressBar">
+                                        <div class="percentagem" style="width:70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="candidatos">
+                                <div class="pracial">
+                                    <div class="info">
+                                        <div class="nome">python</div>
+                                        <div class="percentage-num">45%</div>
+
+                                    </div>
+                                    <div class="progressBar">
+                                        <div class="percentagem" style="width:45%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+
+                            <div class="candidatos">
+                                <div class="pracial">
+                                    <div class="info">
+                                        <div class="nome">Java</div>
+                                        <div class="percentage-num">75%</div>
+
+                                    </div>
+                                    <div class="progressBar">
+                                        <div class="percentagem" style="width:75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="candidatos">
+                                <div class="pracial">
+                                    <div class="info">
+                                        <div class="nome">FrontEnd</div>
+                                        <div class="percentage-num">60%</div>
+
+                                    </div>
+                                    <div class="progressBar">
+                                        <div class="percentagem" style="width:60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         <div class="col-sm-12 col-md-6">
+            <div class="mh-professional-skills">
+                <h3>Professional skills</h3>
+                <ul class="mh-professional-progress">
+                    <li>
+                        <div class="mh-progress mh-progress-circle" data-progress="90"></div>
+                        <div class="pr-skill-name">Communication</div>
+                    </li>
+
+                    <li>
+                        <div class="mh-progress mh-progress-circle" data-progress="65"></div>
+                        <div class="pr-skill-name">Team Work</div>
+                    </li>
+
+                    <li>
+                        <div class="mh-progress mh-progress-circle" data-progress="70"></div>
+                        <div class="pr-skill-name">Project Management</div>
+                    </li>
+
+                    <li>
+                        <div class="mh-progress mh-progress-circle" data-progress="60"></div>
+                        <div class="pr-skill-name">Creativity</div>
+                    </li>
+                </ul>
+            </div>
+         </div>
+
+
+        </div>
+    </div>
+    </section>
+ <!-- ---------------------------------------------------------------------- -->
+
+ <h2 class="sub-title service " >My Work</h2>
+    <div class="container1" id="work">
+        <div class="box">
+            <div class="content">
+                <h2>01</h2>
+                <h3>C Language</h3>
+                <p>I am familiar with functions, pointers, arrays, structures, and memory allocation in C. I can write small to medium-sized programs that solve specific problems.</p>
+                <a href="Card File\c.html">Read More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <h2>02</h2>
+                <h3>C++ Language</h3>
+                <p>I have a deep understanding of C++ programming and can use advanced features such as smart pointers, lambdas, and algorithms. I can write large-scale programs with multiple modules, use libraries, and handle errors and exceptions.
+
+                </p>
+                <a href="Card File\cpp.html">Read More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Python Language</h3>
+                
+                <p> I have a basic understanding of Python syntax, data types, and control structures. I am familiar with functions and modules.</p>
+                <a href="Card File\pthon.html">Read More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <h2>04</h2>
+                <h3>HTML CSS Language</h3>
+                <p>I have a deep understanding of HTML and CSS and can use advanced features such as semantic HTM and responsive design. I can create complex layouts, animations, and interactions</p>
+                <a href="Card File\css.html">Read More</a>
+            </div>
+        </div> 
+    
+        <div class="box">
+            <div class="content">
+                <h2>05</h2>
+                <h3>JS Language</h3>
+                <p>I am comfortable with more advanced JavaScript features such as functions, objects, arrays, and JSON. I have a good understanding of AJAX, jQuery, and other common libraries.</p>
+                <a href="Card File\JavaScript.html">Read More</a>
+            </div>
+        </div>
+        
+
+        <div class="box">
+            <div class="content">
+                <h2>06</h2>
+                <h3>Web Development</h3>
+                <p>I am comfortable with more advanced web development concepts such as responsive design, accessibility, and cross-browser compatibility.</p>
+                <a href="Card File\webDev.html">Read More</a>
+            </div>
+        </div>
+    </div>
+    
+   <!-- --------------------------------------------------------------------------- -->
+   <div class="cert" id="cert">
+    <div class="container">
+        <div class="cert-image">
+          <img class="cert-img" src="F:\portfolio2\images\contact-img.svg">
+        </div>
+        <div class="text">
+            <h1 class="sub-title">Certificates</h1>
+          <p>All my attended Seminar, Webinar, Traning, Courses and Workshops certificates are here.</p>
+          <a href="F:\portfolio2\slider\slide.html" class="btn btn2">View --></a>
+        </div>
+      </div>
+    </div>
+   <!-- ----------------------------------------------------------------- -->
+ <div id="contact" class="contact">
+    <div class="container">
+    <div class="row">
+    <div class="contact-left">
+        <h1 class="sub-title con">Contact Me</h1>
+        <p ><i class="fa-solid fa-paper-plane"></i>ashishgoyal3281@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i>9996045728</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100016705154679" ><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/AshishG84629445?t=qSSa329JzuHShdFal765LA&s=08" ><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://instagram.com/_ashish__goyal_?igshid=NTE5MzUyOTU=" ><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ashish-goyal-819061225" ><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/ashish3281" ><i class="fa-brands fa-square-github"></i></a>
+        </div>
+        <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+    </div>
+    <div class="contact-right">
+    <div class="hero">
+        <form action="javascript:sendEmail()" method="post" >
+            <div class="row">
+                <div class="input-group">
+            <input type="text"  id="name"  required>
+            <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+            </div> 
+            <div class="input-group">
+                <input type="text" id="number"  required>
+                <label for="number"><i class="fa-solid fa-phone"></i> Phone No.</label>
+                </div> 
+            </div>
+            
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email"><i class="fa-solid fa-envelope"></i> Email Id</label>
+                    </div> 
+                    
+                    <div class="input-group">
+                        <textarea id="message"  rows="8" required></textarea>
+                        <label for="message"><i class="fa-solid fa-message"></i> Your Message</label>
+                        </div> 
+                        <button type="submit" class="submit"><i class="fa-solid fa-paper-plane"></i> SUBMIT</button>
+                        
+        </form>
+    </div>
+    <span id="msg"></span>
+    </div>
+</div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Ashish Goyal <i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i>. </p>
+    </div>
+   </div>
+    <!-- --------------------------------------------------------------------------- -->
+
+</div>
+
+
+<script src="script.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+     var typingEffect=new Typed(".multiText",{
+         strings :["Frontend Developer","Coder","Learner"],
+         loop:true,
+         typeSpeed:100,
+         backspeed:80,
+         backDelay:1500
+     })
+    </script>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+</script>
+<script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        var name=$('#name').val();
+        var number=$('#number').val();
+        var email=$('#email').val();
+       
+        var message=$('#message').val();
+
+        var Body ='Name: '+name+'<br>Number: '+number+'<br>Email: '+email+'<br>Message: '+message;
+    
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "ashishgoyal3281@gmail.com",
+            Password : "6BCE11BDC1A21DFB2129523E252639D6B02E",
+            To : 'ashish_206010@saitm.org',
+            From : "ashishgoyal3281@gmail.com",
+            Subject : "New message on contact form",
+            Body : Body
+        }).then(
+          message =>{
+            if(message=='OK'){
+                alert('Your Message has been send . Thank you for connecting me. ');
+            }
+            else{
+                console.error (message);
+                alert('There is error at sending message.');
+            }
+          }
+        );
+        }
+    </script> 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="circle.js"></script>
+    <script src="script.js"></script>
+    <script src="loader.js"></script>
+
+
+     
+</body>
+</html>
