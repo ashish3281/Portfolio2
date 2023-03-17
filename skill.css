@@ -183,6 +183,9 @@
 }
 
 @media only screen and (max-width: 600px){
+    .mh-skills{
+        display: block;
+    }
     .mh-professional-skills {
         padding-left: 0%;
     }

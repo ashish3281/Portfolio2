@@ -596,6 +596,18 @@ input:focus~label,input:valid~label,textarea:focus~label,textarea:valid~label{
     #menu-icon{
         display: block;
     }
+    .home{
+        display: block;
+    }
+.about{
+    display: block;
+}
+.container1{
+    display: block;
+}
+.contact{
+    display: block;
+}
     .navbar{
         position: absolute;
         top: 100%;
