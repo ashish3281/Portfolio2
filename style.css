@@ -78,10 +78,20 @@ b{
     justify-content: center;
     align-items: center;
 }
+
+a.btn1.hide {
+    display: none;
+}
 .home-img{
     width: 30vw;
     animation: object2 4s linear infinite;
 }
+ #show{
+        visibility: hidden;
+    }
+    #hide{
+        visibility:visible;
+    }
 @keyframes object2{
     50%{
         top: 49%;
@@ -484,6 +494,16 @@ nav .fa-solid{
         cursor: pointer;
 
     } */
+    .hero {
+      
+        margin-top: -100px;
+    }
+    a.btn1.hide {
+        display: inline-block;
+    }
+    a.btn1.show {
+        display: none;
+    }
     .sub-title{
         font-size: 40px;
     }
@@ -629,8 +649,10 @@ input:focus~label,input:valid~label,textarea:focus~label,textarea:valid~label{
     }
     .home{
         flex-direction: column;
+        margin-bottom: -200px;
 
     }
+    
     .home-content h3{
         font-size: 2.6rem;
     }
@@ -641,4 +663,5 @@ input:focus~label,input:valid~label,textarea:focus~label,textarea:valid~label{
         width: 45vw;
         margin-top: 4rem;
     }
+    
 }

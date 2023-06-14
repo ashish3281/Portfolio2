@@ -74,7 +74,7 @@
     stroke: rgba(0,0,0,0.7);
 }
 .mh-progress path:nth-child(2){
-    stroke: #0bceaf !important;
+    stroke: #0ef !important;
 }
 
 .candidatos{
@@ -133,7 +133,7 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    background: #0bceaf;
+    background: #0ef;
     transition: 3s all;
     animation-name: animationProgress;
     font-family: 'Poppins',sans-serif;
@@ -155,7 +155,7 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    background: #0bceaf;
+    background: #0ef;
     transition: 3s all;
     animation-name: animationProgress;
     font-family: 'Poppins',sans-serif;
@@ -193,5 +193,13 @@
     .mh-skills .mh-professional-skill {
         padding-left: 50px;
         align-items: center;
+    }
+    #skill{
+     display: none;
+    }
+    .mh-skills .mh-professional-skills h3 {
+    
+        margin: 60px;
+        
     }
     }
